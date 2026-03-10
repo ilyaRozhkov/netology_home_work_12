@@ -22,6 +22,7 @@ int main(int argc, char** argv)
 				std::cout << arr[i]<< " ";
 			}
 		fin.close();
+		delete[] arr;
 	}
 	else {
 		std::cout << "Не удалось открыть файл";
