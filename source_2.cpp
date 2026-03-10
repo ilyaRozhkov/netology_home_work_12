@@ -9,7 +9,6 @@ int main(int argc, char** argv)
 	std::ifstream fin("in.txt");
 	int s;
 	int size;
-	int iterator = 0;
 
 	if (fin.is_open()) {
 
