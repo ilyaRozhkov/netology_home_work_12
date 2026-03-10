@@ -14,6 +14,7 @@ int main(int argc, char** argv)
 		{
 			std::cout << s << std::endl;
 		}
+		fin.close();
 	}
 	else {
 		std::cout << "Не удалось открыть файл";
