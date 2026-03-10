@@ -29,6 +29,7 @@ int main(int argc, char** argv)
 		fout << arr[i] << " ";
 	}
 	fout.close();
+	delete[] arr;
 
 	return 0;
 }
