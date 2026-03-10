@@ -7,7 +7,7 @@ int main(int argc, char** argv)
 {
 	setlocale(LC_ALL, ".UTF8");
 	std::ifstream fin("in.txt");
-	int s;
+	int nextValue;
 	int size;
 
 	if (fin.is_open()) {
@@ -15,8 +15,8 @@ int main(int argc, char** argv)
 		fin >> size;
 		int* arr = new int[size];
 			for (int i = 0; i < size; i++) {
-				fin >> s;
-				arr[i] = s;
+				fin >> nextValue;
+				arr[i] = nextValue;
 		}
 			for (int i = size-1; i >= 0; i--) {
 				std::cout << arr[i]<< " ";
