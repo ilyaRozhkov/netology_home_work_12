@@ -7,12 +7,12 @@ int main(int argc, char** argv)
 {
 	setlocale(LC_ALL, ".UTF8");
 	std::ifstream fin("in.txt");
-	std::string s;
+	std::string word;
 
 	if (fin.is_open()) {
-		while (!(fin >> s).eof())
+		while (fin >> word)
 		{
-			std::cout << s << std::endl;
+			std::cout << word << std::endl;
 		}
 		fin.close();
 	}
