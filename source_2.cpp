@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 			for (int i = size-1; i >= 0; i--) {
 				std::cout << arr[i]<< " ";
 			}
-
+		fin.close();
 	}
 	else {
 		std::cout << "Не удалось открыть файл";
