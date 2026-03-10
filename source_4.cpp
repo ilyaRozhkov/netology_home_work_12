@@ -19,14 +19,14 @@ int main(int argc, char** argv)
 			arr[i] = new int[cols];
 		}
 		for (int i = 0; i < rows; i++) {
-			for (int j = 0; j < cols; j++) {
+				for (int j = cols - 1; j >= 0; j--) {
 				fin >> value;
 				arr[i][j] = value;
 			}
 		}
 
 		for (int i = 0; i < rows; i++) {
-			for (int j = cols-1; j >= 0; j--) {
+			for (int j = 0; j < cols; j++) {
 				std::cout << arr[i][j] << " ";
 			}
 			std::cout << std::endl;
