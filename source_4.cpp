@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 			arr[i] = new int[cols];
 		}
 		for (int i = 0; i < rows; i++) {
-				for (int j = cols - 1; j >= 0; j--) {
+			for (int j = cols - 1; j >= 0; j--) {
 				fin >> value;
 				arr[i][j] = value;
 			}
@@ -33,6 +33,7 @@ int main(int argc, char** argv)
 		}
 		fin.close();
 		for (int i = 0; i < rows; i++) {
+			delete[] arr[i];
 		}
 		delete[] arr;
 	}
